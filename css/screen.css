@@ -708,19 +708,20 @@ footer {
   display: inline-block;
   vertical-align: top;
   width: 130px;
-  margin-right: 65px; }
-  /* line 622, ../sass/screen.scss */
+  margin-right: 65px;
+  margin-left: 20px; }
+  /* line 623, ../sass/screen.scss */
   .footer_menu h3 {
     font: 18px/17px "Cuprum", Arial, sans-serif;
     color: white;
     margin-bottom: 10px; }
-  /* line 627, ../sass/screen.scss */
+  /* line 628, ../sass/screen.scss */
   .footer_menu .contact {
     width: 240px; }
-    /* line 629, ../sass/screen.scss */
+    /* line 630, ../sass/screen.scss */
     .footer_menu .contact li {
       margin: 20px 0; }
-      /* line 631, ../sass/screen.scss */
+      /* line 632, ../sass/screen.scss */
       .footer_menu .contact li i {
         /*contact icon*/
         display: inline-block;
@@ -728,64 +729,42 @@ footer {
         margin-right: 15px;
         width: 20px;
         height: 20px; }
-      /* line 638, ../sass/screen.scss */
+      /* line 639, ../sass/screen.scss */
       .footer_menu .contact li .point {
         background: url("../images/point.png") no-repeat 50% 50%; }
-      /* line 639, ../sass/screen.scss */
+      /* line 640, ../sass/screen.scss */
       .footer_menu .contact li .email {
         background: url("../images/email.png") no-repeat 50% 50%; }
-      /* line 640, ../sass/screen.scss */
+      /* line 641, ../sass/screen.scss */
       .footer_menu .contact li .fone {
         background: url("../images/fone.png") no-repeat 50% 50%; }
 
-/* line 645, ../sass/screen.scss */
+/* line 646, ../sass/screen.scss */
 .footer_menu_item {
   margin-bottom: 30px;
   font: 16px "Cuprum", Arial, sans-serif; }
-  /* line 648, ../sass/screen.scss */
+  /* line 649, ../sass/screen.scss */
   .footer_menu_item a {
     color: #5ac1ff;
     text-decoration: none;
     transition: all 0.3s ease; }
-    /* line 652, ../sass/screen.scss */
+    /* line 653, ../sass/screen.scss */
     .footer_menu_item a:hover {
       color: white;
       transition: all 0.3s ease; }
-  /* line 657, ../sass/screen.scss */
+  /* line 658, ../sass/screen.scss */
   .footer_menu_item li {
     margin: 3px 0;
     color: #5ac1ff; }
 
-/* line 663, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .footer_bottom-line {
   padding: 15px 0 15px;
   font: 14px/20px "Cuprum", Arial, sans-serif; }
-  /* line 666, ../sass/screen.scss */
+  /* line 667, ../sass/screen.scss */
   .footer_bottom-line a {
     color: #5ac1ff; }
-  /* line 669, ../sass/screen.scss */
+  /* line 670, ../sass/screen.scss */
   .footer_bottom-line p {
     text-align: center;
     margin: 0 auto; }
-
-/***slider-clients***/
-/**************************************************/
-@media screen and (max-width: 1070px) {
-  /* line 677, ../sass/screen.scss */
-  .container, .slider-4, .controls {
-    width: 95%; }
-
-  /* line 680, ../sass/screen.scss */
-  .header_nav_menu {
-    width: 95%; }
-
-  /* line 683, ../sass/screen.scss */
-  .header-site_wrap, .header-site_logo {
-    float: none; }
-
-  /* line 686, ../sass/screen.scss */
-  img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    /* ie8 */ } }
