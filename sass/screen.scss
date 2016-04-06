@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin);
-@import "compass/reset";
+// @import "compass/reset";
 $silver:#D5D5D5;
 $bg-header-top:#0c385d;
 $bg-header:#fafafa;
@@ -16,16 +16,22 @@ $transition-hover: all 0.3s ease;
 $bg-hover:rgba(255, 255, 255, 0.2);
 $footer-color: #5ac1ff;
 $black:#0b283a;
-$font-family: 'Cuprum', Arial, sans-serif;
-@mixin opacity-05 {
-	opacity: 0.7;
-}
+$font-family: "Cuprum", Arial, sans-serif;
+
 @mixin clearfix {
 	&::after{
 		content:"";
 		display:table;
 		clear: both;
 	}
+}
+body{
+	// font: 16px/20px $font-family;
+}
+
+ul{
+	margin:0;
+	padding:0;
 }
 
 h1{
@@ -34,6 +40,8 @@ h1{
 }
 .container{
 	@include clearfix;
+	box-sizing: border-box;
+	padding:0 20px;
 	width:980px;
 	margin:0 auto;
 	position: relative;
@@ -42,7 +50,7 @@ h1{
 
 /***HEADER***/
 /**************************************************/
-header{
+header {
 	background-color: $bg-header;
 }
 
@@ -152,30 +160,35 @@ header{
 	background-image: $bg-nav;
 }
 
-.header_nav_menu{
+.header_nav_menu {
 	@include clearfix;
 	list-style: none;
-	li{
+
+	li {
 		float:left;
 		margin-right:15px;
+
+		&:last-child {
+			margin:0;
+		}
 	}
-	a{
+
+	a {
 		color:white;
 		text-decoration: none;
 		display:block;
 		padding:18px 20px;
 		font:18px $font-family;
 		transition: $transition-hover;
-	}
-	a:hover{
-		background-color: $bg-hover;
-		transition: $transition-hover;
-	}
-	a:active{
-		background-color: rgba(255, 255, 255, 0.3);
-	}
-	li:last-child{
-		margin:0;
+
+		&:hover {
+			background-color: $bg-hover;
+			transition: $transition-hover;
+		}
+
+		&:active {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
 	}
 }
 
@@ -319,7 +332,7 @@ header{
 .advantages_banner{
 	float:right;
 	width:210px;
-	padding:25px 20px 0 0;
+	padding:25px 0 0 0;
 	img{
 		width:100%;
 	}
