@@ -3,37 +3,53 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin);
-/* line 32, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 34, ../sass/screen.scss */
 ul {
   margin: 0;
   padding: 0; }
 
-/* line 37, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 h1 {
   font: 35px "Cuprum", Arial, sans-serif;
   line-height: 20px; }
 
-/* line 41, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  /* line 48, ../sass/screen.scss */
+  a:hover {
+    transition: all 0.3s ease;
+    opacity: .8; }
+
+/* line 53, ../sass/screen.scss */
 .container {
   box-sizing: border-box;
   padding: 0 20px;
   width: 980px;
   margin: 0 auto;
-  position: relative;
-  padding-top: 1px; }
+  position: relative; }
   /* line 22, ../sass/screen.scss */
   .container::after {
     content: "";
     display: table;
     clear: both; }
+  /* line 61, ../sass/screen.scss */
+  .container_no-padding {
+    padding: 0; }
 
 /***HEADER***/
 /**************************************************/
-/* line 53, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 header {
   background-color: #fafafa; }
 
-/* line 57, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .header_top-line {
   background-color: #0c385d; }
   /* line 22, ../sass/screen.scss */
@@ -42,96 +58,95 @@ header {
     display: table;
     clear: both; }
 
-/* line 62, ../sass/screen.scss */
-.header_top-line_application {
+/* line 78, ../sass/screen.scss */
+.header_top-line_application a {
   text-transform: uppercase;
   float: right;
-  background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd);
   font: bold 16px "Cuprum", Arial, sans-serif;
   line-height: 16px;
   color: white;
   padding: 12px 34px;
-  margin: 0 20px 0 15px; }
+  margin-left: 15px; }
 
-/* line 73, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .header_top-line_slogan {
   float: left;
   font: 15px "Cuprum", Arial, sans-serif;
   padding: 11px 0;
-  color: white;
-  margin-left: 20px; }
+  color: white; }
 
-/* line 81, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .header_top-line_social {
   float: right;
   min-height: 40px;
   width: 54px; }
 
-/* line 87, ../sass/screen.scss */
-.header_top-line_facebook, .header_top-line_vk {
+/* line 103, ../sass/screen.scss */
+.header_top-line_facebook,
+.header_top-line_vk {
   display: inline-block;
   text-decoration: none;
   width: 24px;
   height: 24px;
   border-radius: 4px;
   margin: 8px 0;
-  background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd);
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease; }
-  /* line 96, ../sass/screen.scss */
-  .header_top-line_facebook i, .header_top-line_vk i {
+  transition: all 0.3s ease; }
+  /* line 113, ../sass/screen.scss */
+  .header_top-line_facebook i,
+  .header_top-line_vk i {
     display: block;
     line-height: 24px;
     text-align: center;
     color: white; }
-  /* line 102, ../sass/screen.scss */
-  .header_top-line_facebook a:hover, .header_top-line_vk a:hover {
+  /* line 119, ../sass/screen.scss */
+  .header_top-line_facebook a:hover,
+  .header_top-line_vk a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
+    transition: all 0.3s ease; }
 
-/* line 108, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .header-site {
-  vertical-align: top; }
+  vertical-align: top;
+  position: relative; }
   /* line 22, ../sass/screen.scss */
   .header-site::after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 113, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .header-site_logo {
   float: left;
   width: 247px;
   height: 64px;
   background: url("../images/logo.png") no-repeat 50% 50%;
-  margin: 10px 20px; }
+  margin: 10px 20px 0 0; }
 
-/* line 121, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .header-site_wrap {
   float: left;
   margin: 22px 0; }
-  /* line 124, ../sass/screen.scss */
+  /* line 142, ../sass/screen.scss */
   .header-site_wrap .header-site_address {
     color: #0c385d;
     font: italic 15px "Cuprum", Arial, sans-serif; }
-  /* line 128, ../sass/screen.scss */
+  /* line 146, ../sass/screen.scss */
   .header-site_wrap .header-site_slogan {
     color: #0c385d;
     font: bold italic 19px "Cuprum", Arial, sans-serif;
     margin-top: 5px; }
 
-/* line 135, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .header-site_info {
-  float: right; }
+  position: absolute;
+  right: 0; }
 
-/* line 139, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .header-site_button {
-  text-align: right;
-  margin-right: 20px; }
-  /* line 142, ../sass/screen.scss */
+  text-align: right; }
+  /* line 164, ../sass/screen.scss */
   .header-site_button a {
     padding: 11px 35px;
     border-radius: 20px;
@@ -140,76 +155,71 @@ header {
     font: 16px/17px "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-    /* line 151, ../sass/screen.scss */
+    transition: all 0.3s ease; }
+    /* line 174, ../sass/screen.scss */
     .header-site_button a:hover {
       background-color: rgba(242, 79, 60, 0.7);
-      -webkit-transition: all 0.3s ease;
-              transition: all 0.3s ease; }
+      transition: all 0.3s ease; }
 
-/* line 158, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .header_nav {
-  min-height: 55px;
-  background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd); }
 
-/* line 163, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .header_nav_menu {
-  list-style: none; }
+  list-style: none;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  font-size: 0; }
   /* line 22, ../sass/screen.scss */
   .header_nav_menu::after {
     content: "";
     display: table;
     clear: both; }
-  /* line 167, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
+  .header_nav_menu::after {
+    content: "";
+    display: inline-block;
+    width: 100%; }
+  /* line 199, ../sass/screen.scss */
   .header_nav_menu li {
-    float: left;
-    margin-right: 15px; }
-    /* line 171, ../sass/screen.scss */
-    .header_nav_menu li:last-child {
-      margin: 0; }
-  /* line 176, ../sass/screen.scss */
+    display: inline-block;
+    font-size: 0; }
+  /* line 204, ../sass/screen.scss */
   .header_nav_menu a {
     color: white;
+    vertical-align: middle;
     text-decoration: none;
     display: block;
+    padding: 0 20px;
     padding: 18px 20px;
     font: 18px "Cuprum", Arial, sans-serif;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-    /* line 184, ../sass/screen.scss */
+    transition: all 0.3s ease; }
+    /* line 214, ../sass/screen.scss */
     .header_nav_menu a:hover {
       background-color: rgba(255, 255, 255, 0.2);
-      -webkit-transition: all 0.3s ease;
-              transition: all 0.3s ease; }
-    /* line 189, ../sass/screen.scss */
+      transition: all 0.3s ease; }
+    /* line 219, ../sass/screen.scss */
     .header_nav_menu a:active {
       background-color: rgba(255, 255, 255, 0.3); }
 
 /***SLIDER***/
 /**************************************************/
-/* line 197, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .slider {
   width: 100%;
   height: 483px;
   overflow: hidden;
   position: relative; }
+  /* line 233, ../sass/screen.scss */
+  .slider .slide-container {
+    height: 483px;
+    position: relative;
+    overflow: hidden;
+    background: lightblue;
+    transition: 0.4s; }
 
-/* line 204, ../sass/screen.scss */
-.red {
-  background-color: red; }
-
-/* line 208, ../sass/screen.scss */
-.slide-container {
-  height: 483px;
-  position: relative;
-  overflow: hidden;
-  background: lightblue;
-  -webkit-transition: 0.4s;
-          transition: 0.4s; }
-
-/* line 216, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .slide {
   position: relative;
   float: left;
@@ -217,31 +227,37 @@ header {
   line-height: 483px;
   font-size: 0; }
 
-/* line 224, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-1 {
-  background: url(../images/slide-1.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-1.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 227, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-2 {
-  background: url(../images/slide-2.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-2.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 230, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-3 {
-  background: url(../images/slide-3.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-3.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 233, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-4 {
-  background: url(../images/slide-4.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-4.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 236, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-5 {
-  background: url(../images/slide-5.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-5.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 239, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .slide-6 {
-  background: url(../images/slide-6.jpg) no-repeat 50% 50%; }
+  background: url("../images/slide-6.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 243, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .controls {
   width: 980px;
   position: absolute;
@@ -249,7 +265,7 @@ header {
   left: 50%;
   margin-top: -21px;
   margin-left: -490px; }
-  /* line 250, ../sass/screen.scss */
+  /* line 264, ../sass/screen.scss */
   .controls a {
     padding: 5px 10px 5px 12px;
     position: absolute;
@@ -257,41 +273,40 @@ header {
     text-decoration: none;
     color: white;
     background-color: #f24f3c;
-    -webkit-transition: 0.4s;
-            transition: 0.4s; }
-    /* line 258, ../sass/screen.scss */
+    transition: 0.4s; }
+    /* line 272, ../sass/screen.scss */
     .controls a:hover {
       background-color: #f26f61;
-      -webkit-transition: 0.4s;
-              transition: 0.4s; }
-  /* line 263, ../sass/screen.scss */
+      transition: 0.4s; }
+  /* line 277, ../sass/screen.scss */
   .controls .prev {
     left: 0; }
-    /* line 265, ../sass/screen.scss */
+    /* line 279, ../sass/screen.scss */
     .controls .prev i {
       height: 23px; }
-  /* line 269, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
   .controls .next {
     right: 0; }
 
 /***advantages***/
 /**************************************************/
-/* line 274, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .advantages {
-  background: #eee url("../images/bg-advantages.jpg") no-repeat 50% 0%; }
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  background: #eee url("../images/bg-advantages.jpg") no-repeat 50% 0%;
+  background-size: cover; }
   /* line 22, ../sass/screen.scss */
   .advantages::after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 278, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .advantages_company {
   float: left;
-  width: 700px;
-  margin: 0 0 30px 20px;
-  padding-top: 40px; }
-  /* line 283, ../sass/screen.scss */
+  width: 700px; }
+  /* line 300, ../sass/screen.scss */
   .advantages_company h1 {
     text-transform: uppercase;
     font: bold 32px/15px "Cuprum", Arial, sans-serif;
@@ -299,31 +314,31 @@ header {
     text-align: center;
     color: white; }
 
-/* line 291, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .tv-icon {
   background: url("../images/tv.png") no-repeat; }
 
-/* line 292, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .star-icon {
   background: url("../images/star.png") no-repeat; }
 
-/* line 293, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .setting-icon {
   background: url("../images/setting.png") no-repeat; }
 
-/* line 294, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .price-icon {
   background: url("../images/price.png") no-repeat; }
 
-/* line 295, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .video-icon {
   background: url("../images/video.png") no-repeat; }
 
-/* line 296, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .win-icon {
   background: url("../images/win.png") no-repeat; }
 
-/* line 298, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .advantages_company_item {
   display: inline-block;
   font-size: 0;
@@ -331,24 +346,24 @@ header {
   width: 191px;
   margin: 0 20px 20px 0; }
 
-/* line 306, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .item-big {
   width: 250px; }
 
-/* line 310, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .advantages_company_item_icon {
   float: left;
   width: 32px;
   min-height: 31px;
   background-position: center; }
 
-/* line 317, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .advantages_company_item_caption {
   margin-left: 40px;
   color: white;
   text-transform: uppercase;
   font: bold 14px/15px "Cuprum", Arial, sans-serif; }
-  /* line 322, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   .advantages_company_item_caption::after {
     content: "";
     display: block;
@@ -357,131 +372,127 @@ header {
     margin-top: 10px;
     background-color: #41b5ff; }
 
-/* line 332, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .advantages_banner {
   float: right;
-  width: 210px;
-  padding: 25px 0 0 0; }
-  /* line 336, ../sass/screen.scss */
+  width: 210px; }
+  /* line 354, ../sass/screen.scss */
   .advantages_banner img {
     width: 100%; }
 
 /***tv***/
 /**************************************************/
-/* line 343, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .tv {
-  background: #eee url("../images/bg-tv.jpg") no-repeat 50% 50%; }
+  padding: 40px 0 50px;
+  background: #eee url("../images/bg-tv.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
-/* line 346, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .ads {
   float: left;
   width: 200px;
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: 20px; }
-  /* line 352, ../sass/screen.scss */
+  /* line 373, ../sass/screen.scss */
   .ads .ads_h1 {
     font: 50px/45px "Cuprum", Arial, sans-serif; }
-  /* line 355, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .ads span {
     color: #e74c3c;
     font: 17px/18px "Cuprum", Arial, sans-serif; }
-    /* line 358, ../sass/screen.scss */
+    /* line 379, ../sass/screen.scss */
     .ads span .lowercase {
       text-transform: lowercase; }
-  /* line 362, ../sass/screen.scss */
+  /* line 383, ../sass/screen.scss */
   .ads .white {
     color: white; }
 
-/* line 367, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .white {
   color: white; }
 
-/* line 371, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .ads_p {
   margin: 0 20px 0 250px;
   color: #0b283a;
   font: 19px/18px "Cuprum", Arial, sans-serif; }
-  /* line 375, ../sass/screen.scss */
+  /* line 396, ../sass/screen.scss */
   .ads_p.white {
     color: white; }
 
 /*** SLIDER tv***/
-/* line 380, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .slider-wrap {
   position: relative;
-  margin: 40px auto 50px;
   width: 100%; }
 
-/* line 385, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .slider-4, .slider-advertising, .slider-news {
   position: relative;
   width: 940px;
   margin: auto; }
-  /* line 389, ../sass/screen.scss */
+  /* line 411, ../sass/screen.scss */
   .slider-4 ul, .slider-advertising ul, .slider-news ul {
     margin: 0;
     padding: 0; }
-    /* line 392, ../sass/screen.scss */
+    /* line 415, ../sass/screen.scss */
     .slider-4 ul li, .slider-advertising ul li, .slider-news ul li {
       display: inline-block;
       list-style: none;
       text-align: center; }
-      /* line 396, ../sass/screen.scss */
+      /* line 419, ../sass/screen.scss */
       .slider-4 ul li .item, .slider-advertising ul li .item, .slider-news ul li .item {
         position: relative;
         vertical-align: middle;
         width: 14rem;
         margin-right: 52px; }
-        /* line 401, ../sass/screen.scss */
+        /* line 424, ../sass/screen.scss */
         .slider-4 ul li .item a, .slider-advertising ul li .item a, .slider-news ul li .item a {
           text-decoration: none; }
 
-/* line 409, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .avatar {
   height: 123px;
   margin: 0 8px 10px;
   background-size: cover;
   background-position: center;
   position: relative; }
-  /* line 415, ../sass/screen.scss */
+  /* line 439, ../sass/screen.scss */
   .avatar.brd {
     border-bottom: 1px solid #565759; }
-  /* line 418, ../sass/screen.scss */
+  /* line 443, ../sass/screen.scss */
   .avatar.avatar-big {
     background-color: white;
     border-radius: 50%;
-    border: 1px solid green;
     width: 205px;
     height: 205px;
     box-shadow: 1px 4px 0px 0px rgba(105, 105, 105, 0.1); }
-  /* line 426, ../sass/screen.scss */
+  /* line 451, ../sass/screen.scss */
   .avatar img {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); }
+  /* line 460, ../sass/screen.scss */
+  .avatar .data {
+    color: #0c385d;
+    font: 15px/25px "Cuprum", Arial, sans-serif;
+    text-transform: uppercase; }
+    /* line 465, ../sass/screen.scss */
+    .avatar .data.white {
+      color: white; }
 
-/* line 436, ../sass/screen.scss */
-.data {
-  color: #0c385d;
-  font: 15px/25px "Cuprum", Arial, sans-serif;
-  text-transform: uppercase; }
-  /* line 440, ../sass/screen.scss */
-  .data.white {
-    color: white; }
-
-/* line 445, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .view-profile {
   color: #6cb6ff;
   font: 25px/25px "Cuprum", Arial, sans-serif;
   text-transform: uppercase; }
 
-/* line 450, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -492,48 +503,48 @@ header {
   text-align: center;
   text-decoration: none;
   border-radius: 50%; }
-  /* line 460, ../sass/screen.scss */
+  /* line 486, ../sass/screen.scss */
   .slider-arrow i {
     font-size: 2rem; }
 
-/* line 465, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .gradient {
-  background: -webkit-linear-gradient(#0087d9, #005dbd);
   background: linear-gradient(#0087d9, #005dbd);
   -webkit-background-clip: text;
   color: transparent; }
 
-/* line 471, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .sa-left, .ad-left, .nw-left {
   left: -30px; }
 
-/* line 472, ../sass/screen.scss */
+/* line 498, ../sass/screen.scss */
 .sa-right, .ad-right, .nw-right {
   right: -30px; }
 
-/* line 473, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 .cl-left {
   left: 0; }
-  /* line 475, ../sass/screen.scss */
+  /* line 501, ../sass/screen.scss */
   .cl-left.slider-arrow i {
     font-size: 1rem; }
 
-/* line 479, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .cl-right {
   right: 0; }
-  /* line 481, ../sass/screen.scss */
+  /* line 507, ../sass/screen.scss */
   .cl-right.slider-arrow i {
     font-size: 1rem; }
 
 /***advertising***/
 /**************************************************/
-/* line 488, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .advertising {
-  background: #eee url("../images/bg-advertising.jpg") no-repeat 50% 50%; }
+  background: #eee url("../images/bg-advertising.jpg") no-repeat 50% 50%;
+  background-size: cover; }
 
 /***news***/
 /**************************************************/
-/* line 495, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .news .other-news {
   display: block;
   font: 15px/17px "Cuprum", Arial, sans-serif;
@@ -542,62 +553,61 @@ header {
   margin: 10px 30px 0 0;
   text-decoration: underline; }
 
-/* line 505, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .slider-wrap.news-margin {
   margin-bottom: 10px; }
 
-/* line 509, ../sass/screen.scss */
+/* line 536, ../sass/screen.scss */
 .news_h2, .clients_h2 {
   font: bold 35px "Cuprum", Arial, sans-serif;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase; }
 
-/* line 516, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 .item-news {
   padding-top: 1px;
   box-shadow: 1px 4px 0px 0px rgba(105, 105, 105, 0.15);
   width: 456px;
-  background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd); }
   /* line 22, ../sass/screen.scss */
   .item-news::after {
     content: "";
     display: table;
     clear: both; }
-  /* line 522, ../sass/screen.scss */
+  /* line 549, ../sass/screen.scss */
   .item-news .item-news_img {
     width: 116px;
     height: 182px;
     float: left; }
-    /* line 526, ../sass/screen.scss */
+    /* line 553, ../sass/screen.scss */
     .item-news .item-news_img img {
       width: 100%;
       height: auto; }
-  /* line 531, ../sass/screen.scss */
+  /* line 558, ../sass/screen.scss */
   .item-news .item-news_content {
     text-align: left;
     margin: 13px 0 0;
     margin-left: 136px; }
-    /* line 535, ../sass/screen.scss */
+    /* line 562, ../sass/screen.scss */
     .item-news .item-news_content .item-news_h2 {
       margin-bottom: 10px; }
-      /* line 537, ../sass/screen.scss */
+      /* line 564, ../sass/screen.scss */
       .item-news .item-news_content .item-news_h2 a {
         font: 18px/19px "Cuprum", Arial, sans-serif;
         color: white;
         text-transform: uppercase; }
-    /* line 543, ../sass/screen.scss */
+    /* line 570, ../sass/screen.scss */
     .item-news .item-news_content .item-news_date {
       color: #5ac1ff;
       font: 16px/18px "Cuprum", Arial, sans-serif;
       margin-bottom: 10px; }
-    /* line 548, ../sass/screen.scss */
+    /* line 575, ../sass/screen.scss */
     .item-news .item-news_content .item-news_prev {
       margin-bottom: 10px;
       color: white;
       font: 18px/18px "Cuprum", Arial, sans-serif; }
-    /* line 553, ../sass/screen.scss */
+    /* line 580, ../sass/screen.scss */
     .item-news .item-news_content .item-news_button {
       font: 15px/19px "Cuprum", Arial, sans-serif;
       display: inline-block;
@@ -608,7 +618,7 @@ header {
       text-decoration: none;
       background-color: white; }
 
-/* line 566, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 .line {
   width: 645px;
   height: 2px;
@@ -616,17 +626,17 @@ header {
   opacity: .55;
   margin: 0 auto 20px; }
 
-/* line 574, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 .slider-wrap.clients-margin {
   margin-top: 0px; }
 
 /***slider-clients***/
 /**************************************************/
-/* line 580, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 .slider-clients {
   width: 940px;
   margin: 0 20px; }
-  /* line 584, ../sass/screen.scss */
+  /* line 611, ../sass/screen.scss */
   .slider-clients li .item {
     vertical-align: middle;
     height: 60px;
@@ -637,22 +647,23 @@ header {
 
 /***slider-clients***/
 /**************************************************/
-/* line 597, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 footer {
   border-top: 6px solid #135889;
   min-height: 393px; }
 
-/* line 602, ../sass/screen.scss */
+/* line 629, ../sass/screen.scss */
 .footer-content {
   background: url(../images/bg-footer.jpg) no-repeat 50% 0;
+  background-size: cover;
   padding-top: 25px;
   font-size: 0; }
 
-/* line 608, ../sass/screen.scss */
+/* line 636, ../sass/screen.scss */
 .footer-line {
   background-color: #fff; }
 
-/* line 612, ../sass/screen.scss */
+/* line 640, ../sass/screen.scss */
 .footer_logo {
   float: left;
   padding-top: 1px;
@@ -661,34 +672,34 @@ footer {
   background-image: url(../images/footer-logo.png);
   margin: 5px 0 7px 20px; }
 
-/* line 621, ../sass/screen.scss */
+/* line 649, ../sass/screen.scss */
 .footer_fone-number {
   float: right;
   font: 25px "Cuprum", Arial, sans-serif;
-  margin: 15px 20px 10px 0; }
-  /* line 625, ../sass/screen.scss */
+  margin: 15px 0 10px; }
+  /* line 653, ../sass/screen.scss */
   .footer_fone-number span {
     font-size: 19px; }
 
-/* line 630, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 .footer_menu {
   display: inline-block;
   vertical-align: top;
   width: 130px;
   margin-right: 65px;
   margin-left: 20px; }
-  /* line 636, ../sass/screen.scss */
+  /* line 664, ../sass/screen.scss */
   .footer_menu h3 {
     font: 18px/17px "Cuprum", Arial, sans-serif;
     color: white;
     margin-bottom: 10px; }
-  /* line 641, ../sass/screen.scss */
+  /* line 669, ../sass/screen.scss */
   .footer_menu .contact {
     width: 240px; }
-    /* line 643, ../sass/screen.scss */
+    /* line 671, ../sass/screen.scss */
     .footer_menu .contact li {
       margin: 20px 0; }
-      /* line 645, ../sass/screen.scss */
+      /* line 673, ../sass/screen.scss */
       .footer_menu .contact li i {
         /*contact icon*/
         display: inline-block;
@@ -696,44 +707,42 @@ footer {
         margin-right: 15px;
         width: 20px;
         height: 20px; }
-      /* line 652, ../sass/screen.scss */
+      /* line 680, ../sass/screen.scss */
       .footer_menu .contact li .point {
         background: url("../images/point.png") no-repeat 50% 50%; }
-      /* line 653, ../sass/screen.scss */
+      /* line 681, ../sass/screen.scss */
       .footer_menu .contact li .email {
         background: url("../images/email.png") no-repeat 50% 50%; }
-      /* line 654, ../sass/screen.scss */
+      /* line 682, ../sass/screen.scss */
       .footer_menu .contact li .fone {
         background: url("../images/fone.png") no-repeat 50% 50%; }
 
-/* line 659, ../sass/screen.scss */
+/* line 687, ../sass/screen.scss */
 .footer_menu_item {
   margin-bottom: 30px;
   font: 16px "Cuprum", Arial, sans-serif; }
-  /* line 662, ../sass/screen.scss */
+  /* line 690, ../sass/screen.scss */
   .footer_menu_item a {
     color: #5ac1ff;
     text-decoration: none;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-    /* line 666, ../sass/screen.scss */
+    transition: all 0.3s ease; }
+    /* line 694, ../sass/screen.scss */
     .footer_menu_item a:hover {
       color: white;
-      -webkit-transition: all 0.3s ease;
-              transition: all 0.3s ease; }
-  /* line 671, ../sass/screen.scss */
+      transition: all 0.3s ease; }
+  /* line 699, ../sass/screen.scss */
   .footer_menu_item li {
     margin: 3px 0;
     color: #5ac1ff; }
 
-/* line 677, ../sass/screen.scss */
+/* line 705, ../sass/screen.scss */
 .footer_bottom-line {
   padding: 15px 0 15px;
   font: 14px/20px "Cuprum", Arial, sans-serif; }
-  /* line 680, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   .footer_bottom-line a {
     color: #5ac1ff; }
-  /* line 683, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   .footer_bottom-line p {
     text-align: center;
     margin: 0 auto; }
