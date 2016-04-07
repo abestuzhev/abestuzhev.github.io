@@ -4,13 +4,14 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin);
-// @import "compass/reset";
 $silver:#D5D5D5;
 $bg-header-top:#0c385d;
 $bg-header:#fafafa;
+
 $color-dark-blue:#005dbd;
 $color-light-blue:#0087d9;
 $bg-nav:linear-gradient($color-light-blue, $color-dark-blue);
+
 $bg-footer-line:#135889;
 $transition-hover: all 0.3s ease;
 $bg-hover:rgba(255, 255, 255, 0.2);
@@ -28,7 +29,6 @@ $font-family: "Cuprum", Arial, sans-serif;
 body  {
 	margin:0;
 	padding:0;
-	// font: 16px/20px $font-family;
 }
 
 ul  {
@@ -63,7 +63,6 @@ a  {
 	}
 }
 
-
 /***HEADER***/
 /**************************************************/
 header  {
@@ -91,7 +90,6 @@ header  {
 	font:15px $font-family;
 	padding:11px 0;
 	color:white;
-	// margin-left:20px;
 }
 
 .header_top-line_social {
@@ -110,12 +108,14 @@ header  {
 	margin:8px 0;
 	background-image: linear-gradient(#0087d9, #005dbd);
 	transition: $transition-hover;
+
 	i {
 		display: block;
 		line-height: 24px;
 		text-align: center;
 		color:white;
 	}
+
 	a:hover {
 		background-color: $bg-hover;
 		transition: $transition-hover;
@@ -139,10 +139,12 @@ header  {
 .header-site_wrap {
 	float:left;
 	margin:22px 0;
+
 	.header-site_address {
 		color:$bg-header-top;
 		font: italic 15px $font-family;
 	}
+
 	.header-site_slogan {
 		color:$bg-header-top;
 		font: bold italic 19px $font-family;
@@ -503,13 +505,13 @@ header  {
 }
 
 .sa-left,
-.ad-left,
+.add-left,
 .nw-left {
 	left: -30px;
 }
 
 .sa-right,
-.ad-right,
+.add-right,
 .nw-right {
 	right: -30px;
 }
@@ -601,16 +603,19 @@ header  {
 				text-transform: uppercase;
 			}
 		}
+
 		.item-news_date {
 			color: $footer-color;
 			font:16px/18px $font-family;
 			margin-bottom:8px;
 		}
+
 		.item-news_prev {
 			margin-bottom:10px;
 			color: white;
 			font:18px/18px $font-family;
 		}
+
 		.item-news_button {
 			font:15px/19px $font-family;
 			display: inline-block;

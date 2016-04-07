@@ -6,8 +6,8 @@ jQuery('.slider-4').lbSlider({
 });
 
 jQuery('.slider-advertising').lbSlider({
-    leftBtn: '.ad-left',
-    rightBtn: '.ad-right',
+    leftBtn: '.add-left',
+    rightBtn: '.add-right',
     visible: 4,
     // autoPlay: true,
 });

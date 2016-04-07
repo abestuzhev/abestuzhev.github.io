@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin);
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 body {
   margin: 0;
   padding: 0; }
@@ -36,7 +36,7 @@ a {
   width: 980px;
   margin: 0 auto;
   position: relative; }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .container::after {
     content: "";
     display: table;
@@ -47,20 +47,20 @@ a {
 
 /***HEADER***/
 /**************************************************/
-/* line 69, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 header {
   background-color: #fafafa; }
 
-/* line 73, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .header_top-line {
   background-color: #0c385d; }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .header_top-line::after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 78, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .header_top-line_application a {
   text-transform: uppercase;
   float: right;
@@ -72,20 +72,20 @@ header {
   padding: 12px 34px;
   margin-left: 15px; }
 
-/* line 89, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .header_top-line_slogan {
   float: left;
   font: 15px "Cuprum", Arial, sans-serif;
   padding: 11px 0;
   color: white; }
 
-/* line 97, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .header_top-line_social {
   float: right;
   min-height: 40px;
   width: 54px; }
 
-/* line 103, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .header_top-line_facebook,
 .header_top-line_vk {
   display: inline-block;
@@ -98,7 +98,7 @@ header {
   background-image: linear-gradient(#0087d9, #005dbd);
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease; }
-  /* line 113, ../sass/screen.scss */
+  /* line 112, ../sass/screen.scss */
   .header_top-line_facebook i,
   .header_top-line_vk i {
     display: block;
@@ -116,7 +116,7 @@ header {
 .header-site {
   vertical-align: top;
   position: relative; }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .header-site::after {
     content: "";
     display: table;
@@ -134,25 +134,25 @@ header {
 .header-site_wrap {
   float: left;
   margin: 22px 0; }
-  /* line 142, ../sass/screen.scss */
+  /* line 143, ../sass/screen.scss */
   .header-site_wrap .header-site_address {
     color: #0c385d;
     font: italic 15px "Cuprum", Arial, sans-serif; }
-  /* line 146, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   .header-site_wrap .header-site_slogan {
     color: #0c385d;
     font: bold italic 19px "Cuprum", Arial, sans-serif;
     margin-top: 5px; }
 
-/* line 153, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .header-site_info {
   position: absolute;
   right: 0; }
 
-/* line 158, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .header-site_button {
   text-align: right; }
-  /* line 161, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   .header-site_button a {
     padding: 11px 35px;
     border-radius: 20px;
@@ -163,38 +163,38 @@ header {
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; }
-    /* line 171, ../sass/screen.scss */
+    /* line 173, ../sass/screen.scss */
     .header-site_button a:hover {
       background-color: rgba(242, 79, 60, 0.7);
       -webkit-transition: all 0.3s ease;
               transition: all 0.3s ease; }
 
-/* line 178, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .header_nav {
   background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd); }
 
-/* line 182, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .header_nav_menu {
   list-style: none;
   text-align: justify;
   text-justify: distribute-all-lines;
   font-size: 0; }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .header_nav_menu::after {
     content: "";
     display: table;
     clear: both; }
-  /* line 189, ../sass/screen.scss */
+  /* line 191, ../sass/screen.scss */
   .header_nav_menu::after {
     content: "";
     display: inline-block;
     width: 100%; }
-  /* line 195, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .header_nav_menu li {
     display: inline-block;
     font-size: 0; }
-  /* line 200, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .header_nav_menu a {
     color: white;
     vertical-align: middle;
@@ -205,24 +205,24 @@ header {
     font: 18px "Cuprum", Arial, sans-serif;
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; }
-    /* line 210, ../sass/screen.scss */
+    /* line 212, ../sass/screen.scss */
     .header_nav_menu a:hover {
       background-color: rgba(255, 255, 255, 0.2);
       -webkit-transition: all 0.3s ease;
               transition: all 0.3s ease; }
-    /* line 215, ../sass/screen.scss */
+    /* line 217, ../sass/screen.scss */
     .header_nav_menu a:active {
       background-color: rgba(255, 255, 255, 0.3); }
 
 /***SLIDER***/
 /**************************************************/
-/* line 223, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .slider {
   width: 100%;
   height: 483px;
   overflow: hidden;
   position: relative; }
-  /* line 229, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .slider .slide-container {
     height: 483px;
     position: relative;
@@ -231,7 +231,7 @@ header {
     -webkit-transition: 0.4s;
             transition: 0.4s; }
 
-/* line 238, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .slide {
   position: relative;
   float: left;
@@ -239,37 +239,37 @@ header {
   line-height: 483px;
   font-size: 0; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-1 {
   background: url("../images/slide-1.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-2 {
   background: url("../images/slide-2.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-3 {
   background: url("../images/slide-3.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-4 {
   background: url("../images/slide-4.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-5 {
   background: url("../images/slide-5.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .slide-6 {
   background: url("../images/slide-6.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 253, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .controls {
   width: 980px;
   position: absolute;
@@ -277,7 +277,7 @@ header {
   left: 50%;
   margin-top: -21px;
   margin-left: -490px; }
-  /* line 261, ../sass/screen.scss */
+  /* line 263, ../sass/screen.scss */
   .controls a {
     padding: 5px 10px 5px 12px;
     position: absolute;
@@ -287,40 +287,40 @@ header {
     background-color: #f24f3c;
     -webkit-transition: 0.4s;
             transition: 0.4s; }
-    /* line 270, ../sass/screen.scss */
+    /* line 272, ../sass/screen.scss */
     .controls a:hover {
       background-color: #f26f61;
       -webkit-transition: 0.4s;
               transition: 0.4s; }
-  /* line 275, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
   .controls .prev {
     left: 0; }
-    /* line 278, ../sass/screen.scss */
+    /* line 280, ../sass/screen.scss */
     .controls .prev i {
       height: 23px; }
-  /* line 282, ../sass/screen.scss */
+  /* line 284, ../sass/screen.scss */
   .controls .next {
     right: 0; }
 
 /***advantages***/
 /**************************************************/
-/* line 287, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .advantages {
   box-sizing: border-box;
   padding: 20px 0 20px;
   background: #eee url("../images/bg-advantages.jpg") no-repeat 50% 0%;
   background-size: cover; }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .advantages::after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 295, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 .advantages_company {
   float: left;
   width: 700px; }
-  /* line 299, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   .advantages_company h1 {
     text-transform: uppercase;
     font: bold 32px/15px "Cuprum", Arial, sans-serif;
@@ -328,31 +328,31 @@ header {
     text-align: center;
     color: white; }
 
-/* line 308, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .tv-icon {
   background: url("../images/tv.png") no-repeat; }
 
-/* line 309, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .star-icon {
   background: url("../images/star.png") no-repeat; }
 
-/* line 310, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .setting-icon {
   background: url("../images/setting.png") no-repeat; }
 
-/* line 311, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .price-icon {
   background: url("../images/price.png") no-repeat; }
 
-/* line 312, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .video-icon {
   background: url("../images/video.png") no-repeat; }
 
-/* line 313, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .win-icon {
   background: url("../images/win.png") no-repeat; }
 
-/* line 315, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .advantages_company_item {
   display: inline-block;
   font-size: 0;
@@ -360,24 +360,24 @@ header {
   width: 191px;
   margin: 0 20px 20px 0; }
 
-/* line 323, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .item-big {
   width: 250px; }
 
-/* line 327, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .advantages_company_item_icon {
   float: left;
   width: 32px;
   min-height: 31px;
   background-position: center; }
 
-/* line 334, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .advantages_company_item_caption {
   margin-left: 40px;
   color: white;
   text-transform: uppercase;
   font: bold 14px/15px "Cuprum", Arial, sans-serif; }
-  /* line 340, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   .advantages_company_item_caption::after {
     content: "";
     display: block;
@@ -386,84 +386,84 @@ header {
     margin-top: 10px;
     background-color: #41b5ff; }
 
-/* line 350, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .advantages_banner {
   float: right;
   width: 210px; }
-  /* line 354, ../sass/screen.scss */
+  /* line 356, ../sass/screen.scss */
   .advantages_banner img {
     width: 100%; }
 
 /***tv***/
 /**************************************************/
-/* line 361, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .tv {
   padding: 40px 0 50px;
   background: #eee url("../images/bg-tv.jpg") no-repeat 50% 50%;
   background-size: cover; }
 
-/* line 367, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .ads {
   float: left;
   width: 200px;
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: 20px; }
-  /* line 374, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .ads .ads_h1 {
     margin: 0;
     font: 50px/45px "Cuprum", Arial, sans-serif; }
-  /* line 379, ../sass/screen.scss */
+  /* line 381, ../sass/screen.scss */
   .ads span {
     color: #e74c3c;
     font: 17px/18px "Cuprum", Arial, sans-serif; }
-    /* line 383, ../sass/screen.scss */
+    /* line 385, ../sass/screen.scss */
     .ads span .lowercase {
       text-transform: lowercase; }
-  /* line 388, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   .ads .white {
     color: white; }
 
-/* line 393, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .white {
   color: white; }
 
-/* line 397, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .ads_p {
   margin: 0 20px 0 250px;
   color: #0b283a;
   font: 19px/18px "Cuprum", Arial, sans-serif; }
-  /* line 401, ../sass/screen.scss */
+  /* line 403, ../sass/screen.scss */
   .ads_p.white {
     color: white; }
 
 /*** SLIDER tv***/
-/* line 406, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .slider-wrap {
   position: relative;
   width: 100%; }
 
-/* line 411, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .slider-4,
 .slider-advertising,
 .slider-news {
   position: relative;
   width: 940px;
   margin: auto; }
-  /* line 418, ../sass/screen.scss */
+  /* line 420, ../sass/screen.scss */
   .slider-4 ul,
   .slider-advertising ul,
   .slider-news ul {
     margin: 0;
     padding: 0; }
-    /* line 422, ../sass/screen.scss */
+    /* line 424, ../sass/screen.scss */
     .slider-4 ul li,
     .slider-advertising ul li,
     .slider-news ul li {
       display: inline-block;
       list-style: none;
       text-align: center; }
-      /* line 427, ../sass/screen.scss */
+      /* line 429, ../sass/screen.scss */
       .slider-4 ul li .item,
       .slider-advertising ul li .item,
       .slider-news ul li .item {
@@ -471,30 +471,30 @@ header {
         vertical-align: middle;
         width: 14rem;
         margin-right: 52px; }
-        /* line 433, ../sass/screen.scss */
+        /* line 435, ../sass/screen.scss */
         .slider-4 ul li .item a,
         .slider-advertising ul li .item a,
         .slider-news ul li .item a {
           text-decoration: none; }
 
-/* line 441, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .avatar {
   height: 123px;
   margin: 0 8px 10px;
   background-size: cover;
   background-position: center;
   position: relative; }
-  /* line 448, ../sass/screen.scss */
+  /* line 450, ../sass/screen.scss */
   .avatar.brd {
     border-bottom: 1px solid #565759; }
-  /* line 452, ../sass/screen.scss */
+  /* line 454, ../sass/screen.scss */
   .avatar.avatar-big {
     background-color: white;
     border-radius: 50%;
     width: 205px;
     height: 205px;
     box-shadow: 1px 4px 0px 0px rgba(105, 105, 105, 0.1); }
-  /* line 460, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   .avatar img {
     max-width: 100%;
     max-height: 100%;
@@ -505,22 +505,22 @@ header {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
-/* line 469, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .data {
   color: #0c385d;
   font: 15px/25px "Cuprum", Arial, sans-serif;
   text-transform: uppercase; }
-  /* line 474, ../sass/screen.scss */
+  /* line 476, ../sass/screen.scss */
   .data.white {
     color: white; }
 
-/* line 479, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .view-profile {
   color: #6cb6ff;
   font: 25px/25px "Cuprum", Arial, sans-serif;
   text-transform: uppercase; }
 
-/* line 485, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -531,46 +531,46 @@ header {
   text-align: center;
   text-decoration: none;
   border-radius: 50%; }
-  /* line 496, ../sass/screen.scss */
+  /* line 498, ../sass/screen.scss */
   .slider-arrow i {
     font-size: 2rem; }
 
-/* line 499, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .gradient {
   background: -webkit-linear-gradient(#0087d9, #005dbd);
   background: linear-gradient(#0087d9, #005dbd);
   -webkit-background-clip: text;
   color: transparent; }
 
-/* line 505, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
 .sa-left,
-.ad-left,
+.add-left,
 .nw-left {
   left: -30px; }
 
-/* line 511, ../sass/screen.scss */
+/* line 513, ../sass/screen.scss */
 .sa-right,
-.ad-right,
+.add-right,
 .nw-right {
   right: -30px; }
 
-/* line 517, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 .cl-left {
   left: 0; }
-  /* line 520, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   .cl-left.slider-arrow i {
     font-size: 1rem; }
 
-/* line 525, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 .cl-right {
   right: 0; }
-  /* line 528, ../sass/screen.scss */
+  /* line 530, ../sass/screen.scss */
   .cl-right.slider-arrow i {
     font-size: 1rem; }
 
 /***advertising***/
 /**************************************************/
-/* line 535, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .advertising {
   background: #eee url("../images/bg-advertising.jpg") no-repeat 50% 50%;
   padding: 40px 0 50px;
@@ -578,10 +578,10 @@ header {
 
 /***news***/
 /**************************************************/
-/* line 543, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .news {
   padding: 40px 0 50px; }
-  /* line 546, ../sass/screen.scss */
+  /* line 548, ../sass/screen.scss */
   .news .other-news {
     display: block;
     font: 15px/17px "Cuprum", Arial, sans-serif;
@@ -590,11 +590,11 @@ header {
     margin: 10px 30px 0 0;
     text-decoration: underline; }
 
-/* line 556, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 .slider-wrap.news-margin {
   margin-bottom: 10px; }
 
-/* line 560, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .news_h2, .clients_h2 {
   font: bold 35px "Cuprum", Arial, sans-serif;
   text-align: center;
@@ -602,7 +602,7 @@ header {
   margin-bottom: 20px;
   text-transform: uppercase; }
 
-/* line 568, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 .item-news {
   box-sizing: border-box;
   box-shadow: 1px 4px 0px 0px rgba(105, 105, 105, 0.15);
@@ -610,47 +610,47 @@ header {
   height: 179px;
   background-image: -webkit-linear-gradient(#0087d9, #005dbd);
   background-image: linear-gradient(#0087d9, #005dbd); }
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .item-news::after {
     content: "";
     display: table;
     clear: both; }
-  /* line 576, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   .item-news .item-news_img {
     overflow: hidden;
     width: 116px;
     height: 179px;
     float: left; }
-    /* line 582, ../sass/screen.scss */
+    /* line 584, ../sass/screen.scss */
     .item-news .item-news_img img {
       width: 100%;
       height: auto; }
-  /* line 588, ../sass/screen.scss */
+  /* line 590, ../sass/screen.scss */
   .item-news .item-news_content {
     text-align: left;
     margin-left: 136px;
     padding: 16px 20px 0 0; }
-    /* line 593, ../sass/screen.scss */
+    /* line 595, ../sass/screen.scss */
     .item-news .item-news_content .item-news_h2 {
       margin: 0;
       margin-bottom: 8px;
       line-height: 10px; }
-      /* line 598, ../sass/screen.scss */
+      /* line 600, ../sass/screen.scss */
       .item-news .item-news_content .item-news_h2 a {
         font: 18px "Cuprum", Arial, sans-serif;
         color: white;
         text-transform: uppercase; }
-    /* line 604, ../sass/screen.scss */
+    /* line 607, ../sass/screen.scss */
     .item-news .item-news_content .item-news_date {
       color: #5ac1ff;
       font: 16px/18px "Cuprum", Arial, sans-serif;
       margin-bottom: 8px; }
-    /* line 609, ../sass/screen.scss */
+    /* line 613, ../sass/screen.scss */
     .item-news .item-news_content .item-news_prev {
       margin-bottom: 10px;
       color: white;
       font: 18px/18px "Cuprum", Arial, sans-serif; }
-    /* line 614, ../sass/screen.scss */
+    /* line 619, ../sass/screen.scss */
     .item-news .item-news_content .item-news_button {
       font: 15px/19px "Cuprum", Arial, sans-serif;
       display: inline-block;
@@ -661,7 +661,7 @@ header {
       text-decoration: none;
       background-color: white; }
 
-/* line 627, ../sass/screen.scss */
+/* line 632, ../sass/screen.scss */
 .line {
   width: 645px;
   height: 2px;
@@ -670,19 +670,19 @@ header {
   margin: 0 auto;
   margin-bottom: 20px; }
 
-/* line 636, ../sass/screen.scss */
+/* line 641, ../sass/screen.scss */
 .slider-wrap.clients-margin {
   margin-top: 0px; }
 
 /***slider-clients***/
 /**************************************************/
-/* line 642, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 .slider-clients {
   width: 940px; }
-  /* line 645, ../sass/screen.scss */
+  /* line 650, ../sass/screen.scss */
   .slider-clients ul {
     list-style: none; }
-  /* line 649, ../sass/screen.scss */
+  /* line 654, ../sass/screen.scss */
   .slider-clients .item {
     vertical-align: middle;
     height: 60px;
@@ -693,23 +693,23 @@ header {
 
 /***footer***/
 /**************************************************/
-/* line 661, ../sass/screen.scss */
+/* line 666, ../sass/screen.scss */
 footer {
   border-top: 6px solid #135889;
   min-height: 393px; }
 
-/* line 666, ../sass/screen.scss */
+/* line 671, ../sass/screen.scss */
 .footer-content {
   background: url(../images/bg-footer.jpg) no-repeat 50% 0;
   background-size: cover;
   padding-top: 25px;
   font-size: 0; }
 
-/* line 673, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
 .footer-line {
   background-color: #fff; }
 
-/* line 677, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 .footer_logo {
   float: left;
   padding-top: 1px;
@@ -718,34 +718,34 @@ footer {
   background-image: url(../images/footer-logo.png);
   margin: 5px 0 7px 20px; }
 
-/* line 686, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 .footer_fone-number {
   float: right;
   font: 25px "Cuprum", Arial, sans-serif;
   margin: 15px 0 10px; }
-  /* line 691, ../sass/screen.scss */
+  /* line 696, ../sass/screen.scss */
   .footer_fone-number span {
     font-size: 19px; }
 
-/* line 696, ../sass/screen.scss */
+/* line 701, ../sass/screen.scss */
 .footer_menu {
   display: inline-block;
   vertical-align: top;
   width: 130px;
   margin-right: 65px;
   margin-left: 20px; }
-  /* line 703, ../sass/screen.scss */
+  /* line 708, ../sass/screen.scss */
   .footer_menu h3 {
     font: 18px/17px "Cuprum", Arial, sans-serif;
     color: white;
     margin-bottom: 10px; }
-  /* line 709, ../sass/screen.scss */
+  /* line 714, ../sass/screen.scss */
   .footer_menu .contact {
     width: 240px; }
-    /* line 712, ../sass/screen.scss */
+    /* line 717, ../sass/screen.scss */
     .footer_menu .contact li {
       margin: 20px 0; }
-      /* line 715, ../sass/screen.scss */
+      /* line 720, ../sass/screen.scss */
       .footer_menu .contact li i {
         /*contact icon*/
         display: inline-block;
@@ -753,45 +753,45 @@ footer {
         margin-right: 15px;
         width: 20px;
         height: 20px; }
-      /* line 723, ../sass/screen.scss */
+      /* line 728, ../sass/screen.scss */
       .footer_menu .contact li .point {
         background: url("../images/point.png") no-repeat 50% 50%; }
-      /* line 724, ../sass/screen.scss */
+      /* line 729, ../sass/screen.scss */
       .footer_menu .contact li .email {
         background: url("../images/email.png") no-repeat 50% 50%; }
-      /* line 725, ../sass/screen.scss */
+      /* line 730, ../sass/screen.scss */
       .footer_menu .contact li .fone {
         background: url("../images/fone.png") no-repeat 50% 50%; }
 
-/* line 730, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .footer_menu_item {
   margin-bottom: 30px;
   font: 16px "Cuprum", Arial, sans-serif;
   list-style: none; }
-  /* line 735, ../sass/screen.scss */
+  /* line 740, ../sass/screen.scss */
   .footer_menu_item li {
     margin: 3px 0;
     color: #5ac1ff; }
-  /* line 740, ../sass/screen.scss */
+  /* line 745, ../sass/screen.scss */
   .footer_menu_item a {
     color: #5ac1ff;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; }
-    /* line 745, ../sass/screen.scss */
+    /* line 750, ../sass/screen.scss */
     .footer_menu_item a:hover {
       color: white;
       -webkit-transition: all 0.3s ease;
               transition: all 0.3s ease; }
 
-/* line 752, ../sass/screen.scss */
+/* line 757, ../sass/screen.scss */
 .footer_bottom-line {
   padding: 15px 0 15px;
   font: 14px/20px "Cuprum", Arial, sans-serif; }
-  /* line 756, ../sass/screen.scss */
+  /* line 761, ../sass/screen.scss */
   .footer_bottom-line a {
     color: #5ac1ff; }
-  /* line 760, ../sass/screen.scss */
+  /* line 765, ../sass/screen.scss */
   .footer_bottom-line p {
     text-align: center;
     margin: 0 auto; }
