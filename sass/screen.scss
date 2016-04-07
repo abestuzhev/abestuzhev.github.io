@@ -151,15 +151,12 @@ header  {
 }
 
 .header-site_info {
-	// float:right;
 	position: absolute;
 	right:0;
-
 }
 
 .header-site_button {
 	text-align: right;
-	// margin-right:20px;
 
 	a {
 		padding:11px 35px;
@@ -179,7 +176,6 @@ header  {
 }
 
 .header_nav {
-	// min-height:55px;
 	background-image: $bg-nav;
 }
 
@@ -261,6 +257,7 @@ header  {
 	left:50%;
 	margin-top:-21px;
 	margin-left:-490px;
+
   a {
 		padding:5px 10px 5px 12px;
     position: absolute;
@@ -269,6 +266,7 @@ header  {
     color: white;
     background-color: #f24f3c;
 		transition: 0.4s;
+
     &:hover {
       background-color: #f26f61;
       transition: 0.4s;
@@ -276,6 +274,7 @@ header  {
   }
 	.prev {
 		left:0;
+
 		i {
 			height:23px;
 		}
@@ -292,11 +291,11 @@ header  {
 	background: #eee url("../images/bg-advantages.jpg") no-repeat 50% 0%;
 	background-size: cover;
 }
+
 .advantages_company {
 	float:left;
 	width:700px;
-	// margin:0 0 30px 20px;
-	// padding-top: 40px;
+
 	h1 {
 		text-transform: uppercase;
 		font:bold 32px/15px $font-family;
@@ -305,6 +304,7 @@ header  {
 		color:white;
 	}
 }
+
 .tv-icon {background: url("../images/tv.png") no-repeat;}
 .star-icon {background: url("../images/star.png") no-repeat;}
 .setting-icon {background: url("../images/setting.png") no-repeat;}
@@ -370,16 +370,21 @@ header  {
 	text-transform: uppercase;
 	margin-bottom:20px;
 	margin-left:20px;
+
 	.ads_h1 {
+		margin:0;
 		font:50px/45px $font-family;
 	}
+
 	span {
 		color:#e74c3c;
 		font:17px/18px $font-family;
+
 		.lowercase {
 			text-transform:lowercase;
 		}
 	}
+
 	.white {
 		color:white;
 	}
@@ -400,10 +405,12 @@ header  {
 /*** SLIDER tv***/
 .slider-wrap {
   position: relative;
-  // margin: 40px auto 50px;
   width:100%;
 }
-.slider-4, .slider-advertising, .slider-news {
+
+.slider-4,
+.slider-advertising,
+.slider-news {
     position: relative;
     width: 940px;
     margin: auto;
@@ -416,11 +423,13 @@ header  {
 			display: inline-block;
 	    list-style: none;
 	    text-align: center;
+
 	    .item {
 		    position:relative;
 		    vertical-align: middle;
 		    width: 14rem;
 	    	margin-right:52px;
+
 				a {
 					text-decoration: none;
 				}
@@ -456,15 +465,14 @@ header  {
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}
+}
+.data {
+	color:$bg-header-top;
+	font:15px/25px $font-family;
+	text-transform: uppercase;
 
-	.data {
-		color:$bg-header-top;
-		font:15px/25px $font-family;
-		text-transform: uppercase;
-
-		&.white {
-			color:white;
-		}
+	&.white {
+		color:white;
 	}
 }
 
@@ -473,6 +481,7 @@ header  {
 	font:25px/25px $font-family;
 	text-transform: uppercase;
 }
+
 .slider-arrow  {
     position: absolute;
     top:50%;
@@ -483,9 +492,8 @@ header  {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  i {
-		font-size:2rem;
-	}
+
+	i {font-size:2rem};
 }
 
 .gradient {
@@ -494,17 +502,30 @@ header  {
   color: transparent;
 }
 
-.sa-left, .ad-left, .nw-left  {left: -30px;}
-.sa-right, .ad-right, .nw-right  {right: -30px;}
+.sa-left,
+.ad-left,
+.nw-left {
+	left: -30px;
+}
+
+.sa-right,
+.ad-right,
+.nw-right {
+	right: -30px;
+}
+
 .cl-left {
 	left:0;
-	&.slider-arrow i  {
+
+	&.slider-arrow i {
     font-size: 1rem;
 	}
 }
+
 .cl-right {
 	right:0;
-	&.slider-arrow i  {
+
+	&.slider-arrow i {
     font-size: 1rem;
 	}
 }
@@ -513,12 +534,15 @@ header  {
 /**************************************************/
 .advertising {
 	background: #eee url("../images/bg-advertising.jpg") no-repeat 50% 50%;
+	padding:40px 0 50px;
 	background-size: cover;
 }
 
 /***news***/
 /**************************************************/
 .news {
+	padding:40px 0 50px;
+
 	.other-news {
 		display: block;
 		font:15px/17px $font-family;
@@ -536,33 +560,43 @@ header  {
 .news_h2, .clients_h2 {
 	font: bold 35px $font-family;
 	text-align: center;
+	margin:0;
 	margin-bottom: 20px;
 	text-transform: uppercase
 }
 
 .item-news {
-	padding-top:1px;
+	box-sizing: border-box;
 	@include clearfix;
 	box-shadow: 1px 4px 0px 0px rgba(105,105,105,0.15);
 	width:456px;
+	height:179px;
 	background-image:$bg-nav;
+
 	.item-news_img {
+		overflow: hidden;
 		width:116px;
-		height: 182px;
+		height: 179px;
 		float:left;
+
 		img {
 			width:100%;
 			height: auto;
 		}
 	}
+
 	.item-news_content {
 		text-align: left;
-		margin:13px 0 0;
 		margin-left:136px;
+		padding:16px 20px 0 0;
+
 		.item-news_h2 {
-			margin-bottom:10px;
+			margin:0;
+			margin-bottom:8px;
+			line-height:10px;
+
 			a {
-				font:18px/19px $font-family;
+				font:18px $font-family;
 				color: white;
 				text-transform: uppercase;
 			}
@@ -570,7 +604,7 @@ header  {
 		.item-news_date {
 			color: $footer-color;
 			font:16px/18px $font-family;
-			margin-bottom:10px;
+			margin-bottom:8px;
 		}
 		.item-news_prev {
 			margin-bottom:10px;
@@ -595,7 +629,8 @@ header  {
 	height:2px;
 	background-color: #d8d8d8;
 	opacity:.55;
-	margin:0 auto 20px;
+	margin:0 auto;
+	margin-bottom: 20px;
 }
 
 .slider-wrap.clients-margin {
@@ -606,20 +641,22 @@ header  {
 /**************************************************/
 .slider-clients {
 	width:940px;
-	margin:0 20px;
-	li {
+
+	ul {
+		list-style: none;
+	}
+
 	.item {
 		vertical-align: middle;
 		height:60px;
 		text-align: center;
 		position:relative;
 		margin-right:5px;
-			line-height: 80px;
-		}
+		line-height: 80px;
 	}
 }
 
-/***slider-clients***/
+/***footer***/
 /**************************************************/
 footer {
 	border-top: 6px solid $bg-footer-line;
@@ -650,6 +687,7 @@ footer {
 	float:right;
 	font:25px $font-family;
 	margin: 15px 0 10px;
+
 	span {
 		font-size:19px;
 	}
@@ -661,15 +699,19 @@ footer {
 	width:130px;
 	margin-right:65px;
 	margin-left: 20px;
+
 	h3 {
 		font: 18px/17px $font-family;
 		color:white;
 		margin-bottom:10px;
 	}
+
 	.contact {
 		width:240px;
+
 		li {
 			margin:20px 0;
+
 			i { /*contact icon*/
 				display:inline-block;
 				vertical-align:middle;
@@ -677,9 +719,10 @@ footer {
 				width:20px;
 				height:20px;
 			}
-			.point {background: url("../images/point.png") no-repeat 50% 50%;}
-			.email {background: url("../images/email.png") no-repeat 50% 50%;}
-			.fone {background: url("../images/fone.png") no-repeat 50% 50%;}
+
+		.point {background: url("../images/point.png") no-repeat 50% 50%;}
+		.email {background: url("../images/email.png") no-repeat 50% 50%;}
+		.fone {background: url("../images/fone.png") no-repeat 50% 50%;}
 		}
 	}
 }
@@ -687,27 +730,33 @@ footer {
 .footer_menu_item {
 	margin-bottom:30px;
 	font: 16px $font-family;
+	list-style: none;
+
+	li {
+		margin:3px 0;
+		color: $footer-color;
+	}
+
 	a {
 		color: $footer-color;
 		text-decoration: none;
 		transition: $transition-hover;
+
 		&:hover {
 			color: white;
 			transition: $transition-hover;
 		}
-	}
-	li {
-		margin:3px 0;
-		color: $footer-color;
 	}
 }
 
 .footer_bottom-line {
 	padding:15px 0 15px;
 	font:14px/20px $font-family;
+
 	a {
 		color:$footer-color;
 	}
+
 	p {
 		text-align: center;
 		margin: 0 auto;
