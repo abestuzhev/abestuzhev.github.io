@@ -1,0 +1,8 @@
+.title {
+  font: 10em "Pt Sans", sans-serif;
+  color:#2c3e50;
+  text-align: center;
+  top: 20%; /* Отступ в процентах от верхнего края окна */
+  width: 100%; /* Ширина блока */
+  position: absolute; /* Абсолютное позиционирование блока */
+}
