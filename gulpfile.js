@@ -9,10 +9,10 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-var srcDir = 'src/';
+// var srcDir = 'src/';
 
 gulp.task('sass', function(){
-  return gulp.src(srcDir + 'scss/**/*.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix('last 3 version'))
     .pipe(gulp.dest('css/'))
@@ -53,8 +53,8 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch(srcDir + 'scss/**/*.scss', ['sass'])
-  gulp.watch(srcDir + 'js/**/*.js', ['js'])
+  gulp.watch('scss/**/*.scss', ['sass'])
+  gulp.watch('js/**/*.js', ['js'])
   gulp.watch('**/*.html', ['html'])
   gulp.watch('css/**/*.css', ['css'])
 });

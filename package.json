@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/abestuzhev/abestuzhev.github.io/issues"
   },
-  "homepage": "https://github.com/abestuzhev/abestuzhev.github.io#readme"
+  "homepage": "https://github.com/abestuzhev/abestuzhev.github.io#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
 }
