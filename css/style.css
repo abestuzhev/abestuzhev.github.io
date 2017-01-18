@@ -1,6 +1,11 @@
 html {
   font-family: "Pt Sans", sans-serif; }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/sayagata-400px.png) 0 0 repeat; }
+
 *,
 *::after,
 *::before {
@@ -13,8 +18,7 @@ a {
 .layout {
   width: 1024px;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #eee; }
+  margin-right: auto; }
 
 .grid::after {
   content: '';
@@ -23,8 +27,8 @@ a {
 
 .grid_item {
   display: inline-block;
-  width: 31%;
-  margin: 0 .6rem;
+  width: 33%;
+  padding: 0 .6rem;
   vertical-align: top; }
 
 .title {
@@ -76,6 +80,18 @@ a {
     border-radius: 1rem;
     color: #000; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 700px) {
   .layout {
-    width: 100%; } }
+    width: 100%;
+    padding: 0 .7em; }
+  .grid_item {
+    width: 49%; } }
+
+@media (max-width: 700px) {
+  .layout {
+    width: 100%; }
+  .grid_item {
+    display: block;
+    width: 100% !important; }
+  .c-card_title h3 {
+    font-size: 1.6em; } }

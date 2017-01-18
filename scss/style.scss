@@ -1,6 +1,12 @@
 html {
   font-family:"Pt Sans", sans-serif;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/sayagata-400px.png) 0 0 repeat;
+}
 *,
 *::after,
 *::before {
@@ -16,7 +22,6 @@ a {
   width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #eee;
 }
 
 .grid {
@@ -29,8 +34,8 @@ a {
 }
 .grid_item {
   display: inline-block;
-  width: 31%;
-  margin: 0 .6rem;
+  width: 33%;
+  padding: 0 .6rem;
   vertical-align: top;
 }
 
