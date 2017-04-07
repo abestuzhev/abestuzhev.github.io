@@ -4,7 +4,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: url(../img/sayagata-400px.png) 0 0 repeat; }
+  background: url(../img/LeEuZIO69Ew.jpg) 0 0 repeat;
+  background-size: cover; }
 
 *,
 *::after,
@@ -16,9 +17,10 @@ a {
   color: #2c3e50; }
 
 .layout {
-  width: 1024px;
-  margin-left: auto;
-  margin-right: auto; }
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.93);
+  padding: 4em 5em 3em;
+  margin: 4em; }
 
 .grid::after {
   content: '';
@@ -27,7 +29,7 @@ a {
 
 .grid_item {
   display: inline-block;
-  width: 33%;
+  width: 24%;
   padding: 0 .6rem;
   vertical-align: top; }
 
@@ -39,7 +41,7 @@ a {
 .c-card {
   display: block;
   position: relative;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 3px rgba(0, 17, 68, 0.38);
   background-color: #fff;
   border-radius: .2rem;
   width: 100%;
@@ -80,18 +82,29 @@ a {
     border-radius: 1rem;
     color: #000; }
 
-@media (max-width: 1024px) and (min-width: 700px) {
+@media (max-width: 1280px) and (min-width: 700px) {
   .layout {
     width: 100%;
-    padding: 0 .7em; }
-  .grid_item {
-    width: 49%; } }
+    padding: 3em .7em;
+    margin: 0;
+    background: none; } }
 
-@media (max-width: 700px) {
-  .layout {
-    width: 100%; }
+@media (max-width: 1680px) {
   .grid_item {
-    display: block;
-    width: 100% !important; }
+    width: 33%; } }
+
+@media (max-width: 1050px) {
+  .layout {
+    width: 100%;
+    padding: .7em;
+    margin: 0;
+    background: none; }
+  .grid_item {
+    width: 49%; }
   .c-card_title h3 {
     font-size: 1.6em; } }
+
+@media (max-width: 700px) {
+  .grid_item {
+    display: block;
+    width: 100% !important; } }
