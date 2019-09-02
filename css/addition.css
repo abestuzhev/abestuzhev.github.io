@@ -14,8 +14,8 @@ body {
 }
 
 .page-title {
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
@@ -27,6 +27,10 @@ body {
     display: inline-block;
     width: 25%;
 
+}
+
+.c-card_title h3 {
+    font-size: 23px;
 }
 
 .c-card {
@@ -86,6 +90,26 @@ body {
 .page-design-img img {
     width: 100%;
     height:auto;
+}
+
+.page-design-desc p,
+.page-header p {
+    margin: 0 0 14px 0;
+}
+
+.page-header-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.page-header-desc {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.page-header-link {
+    display: block;
 }
 
 @media (max-width:700px){
