@@ -1,0 +1,95 @@
+
+.layout {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    background: none;
+}
+
+.grid {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.page-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.grid-design {
+
+}
+
+.grid-design__item {
+    display: inline-block;
+    width: 25%;
+
+}
+
+.c-card {
+    padding: .5em 1rem 3.9em;
+}
+
+.card-design {
+    width: 100%;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 17, 68, 0.2);
+    box-shadow: 0 1px 10px rgba(0, 17, 68, 0.2);
+    border-radius: 6px;
+    background-color: #ccc;
+    overflow: hidden;
+    height: 20vw;
+    position: relative;
+}
+
+.card-design__img {
+    height: 100%;
+}
+.card-design__img img {
+
+}
+
+.card-design__body {
+    font-size: 15px;
+    line-height: 1;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.page-design {
+    margin-bottom: 40px;
+}
+
+.page-design-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.page-design-desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.page-design-img {
+    width: 100%;
+}
+
+.page-design-img img {
+    width: 100%;
+    height:auto;
+}
+
+@media (max-width:700px){
+    .c-card {
+    height: auto !important;
+}
+}
