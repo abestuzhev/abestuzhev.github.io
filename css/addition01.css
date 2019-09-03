@@ -50,6 +50,8 @@ body {
 }
 .c-card_title h3 {
     font-weight: 400;
+    font-size: 21px;
+    line-height: 1.2;
 }
 
 .card-design {
@@ -67,6 +69,14 @@ body {
     /*background-color: #fc0;*/
     background-color: rgba(255, 204, 0, 0.18);
     color: #9a7c00;
+}
+
+.c-card_tags {
+    position: static;
+}
+
+.c-card_text {
+    margin-bottom: 7px;
 }
 
 .card-design__img {
